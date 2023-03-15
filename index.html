@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Project</title>
+    <link rel="icon" href="cloudy.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+        <video autoplay loop muted plays-inline class="bg">
+            <source src="clip/Pexels Videos 4191.mp4" type="video/mp4">
+        </video>
+      <div class="app-main">
+        <div class="seachInput">
+          <input
+            type="text"
+            id="input-box"
+            class="input-box"
+            placeholder="Enter city name..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="weather-body">
+          <div class="location-details">
+            <div class="city" id="city">Asansol In</div>
+            <div class="date" id="date">Wed, 18 February, 2023</div>
+          </div>
+
+          <div class="weather-status">
+            <div class="temp" id="temp">34&deg;C</div>
+            <div class="weather" id="weather">Clear</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

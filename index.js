@@ -37,6 +37,9 @@ function showWeatherReport(weather) {
   let weatherType = document.getElementById("weather");
   weatherType.innerHTML = `${weather.weather[0].main}`;
 
+  let icon = document.getElementById("icon");
+  icon.src = `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
+
 
 
   let date = document.getElementById("date");
@@ -46,8 +49,8 @@ function showWeatherReport(weather) {
   });
   date.innerHTML = f.format(today);
 
-  let bg = document.querySelector(".bg");
-  bg.style.display="block"
+  // let bg = document.querySelector(".bg");
+  // bg.style.display="block"
 
 
 

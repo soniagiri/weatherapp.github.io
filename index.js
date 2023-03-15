@@ -37,6 +37,8 @@ function showWeatherReport(weather) {
   let weatherType = document.getElementById("weather");
   weatherType.innerHTML = `${weather.weather[0].main}`;
 
+
+
   let date = document.getElementById("date");
   let today = new Date();
   let f = new Intl.DateTimeFormat("en-us", {
@@ -44,15 +46,20 @@ function showWeatherReport(weather) {
   });
   date.innerHTML = f.format(today);
 
+  let bg = document.querySelector(".bg");
+  bg.style.display="block"
+
+
+
   if (weatherType.textContent == "Clouds") {
     document.querySelector(".bg").setAttribute("src", "clip/cloudy.mp4");
   } else if (weatherType.textContent == "Rain") {
     document.querySelector(".bg").setAttribute("src", "clip/rain.mp4");
   } else if (weatherType.textContent == "Clear" || weatherType.textContent == "Haze" || weatherType.textContent == "Mist") {
-    document.querySelector(".bg").setAttribute("src", "clip/clear.mp4");
-    document.querySelector(".weather-body").style.color = "black";
-    document.querySelector(".weather-body").style.textShadow =
-      "0px 0px #000000";
+    document.querySelector(".bg").setAttribute("src", "clip/Pexels Videos 4191.mp4");
+    // document.querySelector(".weather-body").style.color = "black";
+    // document.querySelector(".weather-body").style.textShadow =
+    //   "0px 0px #000000";
   } else if (weatherType.textContent == "Thunder") {
     document.querySelector(".bg").setAttribute("src", "clip/thunder.mp4");
 

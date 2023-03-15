@@ -42,6 +42,7 @@ function showWeatherReport(weather) {
 
 
 
+
   let date = document.getElementById("date");
   let today = new Date();
   let f = new Intl.DateTimeFormat("en-us", {
@@ -49,8 +50,8 @@ function showWeatherReport(weather) {
   });
   date.innerHTML = f.format(today);
 
-  // let bg = document.querySelector(".bg");
-  // bg.style.display="block"
+  let bg = document.querySelector(".bg");
+  bg.style.display="block"
 
 
 

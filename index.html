@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App Project</title>
-    <link rel="icon" href="cloudy.png" type="image/icon type">
+    <link rel="icon" href="cloudy.png" type="image/icon type" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div>
-        <video autoplay loop muted plays-inline class="bg">
-            <source src="clip/Pexels Videos 4191.mp4" type="video/mp4">
-        </video>
+      <video autoplay loop muted plays-inline class="bg">
+        <source src="clip/footage-12127.mp4" type="video/mp4" />
+      </video>
       <div class="app-main">
         <div class="seachInput">
           <input
@@ -26,13 +26,16 @@
 
         <div class="weather-body">
           <div class="location-details">
-            <div class="city" id="city">Asansol In</div>
-            <div class="date" id="date">Wed, 18 February, 2023</div>
+            <h3 class="city" id="city">Asansol In</h3>
           </div>
+          <small>
+            <span class="date" id="date">Wed, 18 February, 2023</span>
+          </small>
 
           <div class="weather-status">
             <div class="temp" id="temp">34&deg;C</div>
             <div class="weather" id="weather">Clear</div>
+            <img id="icon" src="http://openweathermap.org/img/wn/01d@2x.png" alt="icon">
           </div>
         </div>
       </div>
